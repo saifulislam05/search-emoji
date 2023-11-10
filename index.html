@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Emojies</title>
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- output style -->
+    <link href="/styles/output.css" rel="stylesheet" />
+    <!-- Emoji Lists json -->
+    <script src="emojiList.js" defer></script>
+    <!-- javascript file  -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="w-11/12 mx-auto my-4">
+      <h1 class="text-3xl font-semibold">Search Emoji</h1>
+      <div class="input_wrapper w-full my-4">
+        <!-- <input type="text" class="search_box p-3 rounded-xl bg " placeholder="Search Emoji here ..."> -->
+        <input
+          id="input_box"
+          type="text"
+          placeholder="Search Emoji here..."
+          class="input input-bordered  w-6/12"
+        />
+      </div>
+    </header>
+
+    <main class="outputWrapper w-11/12 mx-auto">
+      <!-- <table class="w-full">
+        <thead>
+          <tr class="text-lg font-semibold">
+            <td>Emoji</td>
+            <td>Aliases</td>
+            <td>Description</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+							<td>
+								<span class="w-12 inline-block">😀</span>
+							</td>
+							<td class="capitalize">grinning</td>
+							<td>Grinning face</td>
+							</tr>
+        </tbody>
+      </table> -->
+
+      <div class="overflow-x-auto">
+        <table class="table">
+          <!-- head -->
+          <thead>
+            <tr class="text-base border-b-4">
+              <th>Emoji</th>
+              <th>Aliases</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody id="table_body" class="text-base">
+            <!-- row 1 -->
+            <tr>
+              <td>Cy Ganderton</td>
+              <td>Quality Control Specialist</td>
+              <td>Blue</td>
+            </tr>
+            <!-- row 2 -->
+            <tr>
+              <td>Hart Hagerty</td>
+              <td>Desktop Support Technician</td>
+              <td>Purple</td>
+            </tr>
+            <!-- row 3 -->
+            <tr>
+              <td>Brice Swyre</td>
+              <td>Tax Accountant</td>
+              <td>Red</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
